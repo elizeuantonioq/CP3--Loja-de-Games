@@ -1,0 +1,8 @@
+.sobre-imagem {
+    display: block;
+    width: 100%;
+    max-width: 700px;
+    margin: 2rem auto 0;
+    border-radius: 12px;
+    object-fit: cover;
+}

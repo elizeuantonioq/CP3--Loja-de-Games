@@ -52,6 +52,12 @@
     margin-bottom: 0.4rem;
 }
 
+.produto-icon img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
 .produto-card h3 {
     font-size: 1.1rem;
     font-weight: 600;
@@ -128,6 +134,13 @@
     font-size: 2.4rem;
     color: #f59e0b;
     margin-top: 0.6rem;
+}
+
+.jogo-icon img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .jogo-card h3 {

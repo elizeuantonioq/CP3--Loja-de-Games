@@ -1,0 +1,309 @@
+/* ===== PORTFÓLIO — HORIZON GAMES ===== */
+
+/* Títulos e destaques */
+.destaque-roxo  { color: #7c3aed; }
+.destaque-amarelo { color: #f59e0b; }
+.destaque-azul  { color: #3b82f6; }
+
+.titulo-secao {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    color: #f1f5f9;
+}
+
+.subtitulo-secao {
+    text-align: center;
+    color: #94a3b8;
+    margin-bottom: 2.5rem;
+    font-size: 1rem;
+}
+
+/* ===== GRID DE PRODUTOS / EQUIPAMENTOS ===== */
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.produto-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 1.8rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.6rem;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.produto-card:hover {
+    transform: translateY(-4px);
+    border-color: #7c3aed;
+}
+
+.produto-icon {
+    font-size: 2.2rem;
+    color: #7c3aed;
+    margin-bottom: 0.4rem;
+}
+
+.produto-card h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f1f5f9;
+}
+
+.produto-card p {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+.produto-preco {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #7c3aed;
+    margin-top: 0.4rem;
+}
+
+/* ===== JOGOS DO MOMENTO ===== */
+.jogos-section {
+    margin-top: 4rem;
+}
+
+.jogos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+}
+
+.jogo-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 1.8rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.6rem;
+    position: relative;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.jogo-card:hover {
+    transform: translateY(-4px);
+    border-color: #f59e0b;
+}
+
+.jogo-destaque {
+    border-color: #f59e0b;
+    box-shadow: 0 0 20px rgba(245, 158, 11, 0.15);
+}
+
+.jogo-badge {
+    position: absolute;
+    top: -0.7rem;
+    background: #7c3aed;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.badge-hot {
+    background: #f59e0b;
+    color: #0f172a;
+}
+
+.jogo-icon {
+    font-size: 2.4rem;
+    color: #f59e0b;
+    margin-top: 0.6rem;
+}
+
+.jogo-card h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #f1f5f9;
+}
+
+.jogo-card p {
+    font-size: 0.88rem;
+    color: #94a3b8;
+    line-height: 1.5;
+}
+
+.jogo-plataforma {
+    font-size: 1.1rem;
+    color: #64748b;
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* ===== PLANOS DE ASSINATURA ===== */
+.precos-section {
+    margin-top: 4rem;
+}
+
+.precos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.plano-card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    transition: transform 0.2s, border-color 0.2s;
+}
+
+.plano-card:hover {
+    transform: translateY(-4px);
+    border-color: #7c3aed;
+}
+
+.plano-destaque {
+    border-color: #7c3aed;
+    box-shadow: 0 0 24px rgba(124, 58, 237, 0.2);
+}
+
+.plano-popular {
+    position: absolute;
+    top: -0.75rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #7c3aed;
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.plano-icone {
+    font-size: 1.8rem;
+    color: #7c3aed;
+    text-align: center;
+}
+
+.plano-header {
+    text-align: center;
+}
+
+.plano-header h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-bottom: 0.2rem;
+}
+
+.plano-header p {
+    font-size: 0.85rem;
+    color: #64748b;
+}
+
+.plano-preco {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 0.15rem;
+    color: #f1f5f9;
+}
+
+.preco-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #94a3b8;
+}
+
+.preco-valor {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #7c3aed;
+    line-height: 1;
+}
+
+.preco-periodo {
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.plano-lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.plano-lista li {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.plano-lista li i.fa-check {
+    color: #7c3aed;
+    flex-shrink: 0;
+}
+
+.plano-lista li i.fa-xmark {
+    color: #475569;
+    flex-shrink: 0;
+}
+
+.plano-lista li.desabilitado {
+    color: #475569;
+}
+
+/* ===== BOTÃO ADICIONAR ===== */
+.btn-add-carrinho {
+    margin-top: auto;
+    background: #7c3aed;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 100%;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.btn-add-carrinho:hover {
+    background: #6d28d9;
+    transform: scale(1.02);
+}
+
+/* ===== RESPONSIVO ===== */
+@media (max-width: 640px) {
+    .titulo-secao { font-size: 1.5rem; }
+    .preco-valor  { font-size: 2.2rem; }
+}

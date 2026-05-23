@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Games | Contato</title>
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/hero.css">
+    <link rel="stylesheet" href="../css/contato.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-wrapper">
+            <img src="../assets/LogoHorizonGames.png" alt="Logo Horizon Games" id="logo">
+            <span class="logo-texto">Horizon Games</span>
+        </div>
+        <div class="nav-direita">
+            <div id="menu-hamburguer"><span></span><span></span><span></span></div>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="./portifolio.html">Portfólio</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="#" class="ativo">Contato</a></li>
+                            <li>
+                                <a href="#" id="btn-abrir-carrinho" class="carrinho-icone">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span id="carrinho-contador">0</span>
+                                </a>
+                            </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <section id="hero-contato">
+        <h1>Entre em <span class="destaque-amarelo">Contato</span></h1>
+        <p>Estamos <span class="destaque-roxo">prontos</span> para atender você. Entre em contato conosco!</p>
+    </section>
+
+    <main>
+        <div id="container">
+
+            <div class="contato-grid">
+
+                <div class="contato-info">
+                    <h3>Informações de Contato</h3>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua Mario Sonic, 123<br>Centro - São Paulo, SP<br>CEP: 01234-567</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 98765-4321<br>(11) 3456-7890</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@horizongames.com.br<br>atendimento@horizongames.com.br</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda a Sexta: 8h às 19h<br>Sábado: 8h às 17h<br>
+                        </div>
+                    </div>
+
+                    <div class="contato-extra">
+                        <h4>Visite-nos!</h4>
+                        <p>Venha conhecer nossa estrutura e conversar com nossa equipe. Será um prazer receber você!</p>
+                    </div>
+                </div>
+
+                <div class="contato-form-container">
+                    <h3>Envie uma Mensagem</h3>
+                    <form id="form-contato" onsubmit="enviarFormulario(event)">
+                        <div class="form-group">
+                            <label for="nome">Seu Nome *</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(11) 98765-4321">
+                        </div>
+                        <div class="form-group">
+                            <label for="jogo">Nome do Jogo</label>
+                            <input type="text" id="jogo" name="jogo" placeholder="Nome do seu jogo favorito">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem *</label>
+                            <textarea id="mensagem" name="mensagem" placeholder="Como podemos ajudar você?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                    </form>
+                    <div class="mensagem-sucesso" id="mensagem-sucesso">
+                        ✓ Mensagem enviada com sucesso! Entraremos em contato em breve.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        function enviarFormulario(event) {
+            event.preventDefault();
+            document.getElementById('form-contato').style.display = 'none';
+            document.getElementById('mensagem-sucesso').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

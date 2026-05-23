@@ -1,11 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>Horizon Games</title>
     
+    <link rel="stylesheet" href="./src/css/base.css">
+    <link rel="stylesheet" href="./src/css/layout.css">
+    <link rel="stylesheet" href="./src/css/hero.css">
+    <link rel="stylesheet" href="./src/css/home.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-wrapper">
+            <img src="./src/assets/Horizon Games.png" alt="Logo Horizon Games" id="logo">
+            <span class="logo-texto">Horizon Games</span>
+        </div>
+        <div class="nav-direita">
+            <div id="menu-hamburguer"><span></span><span></span><span></span></div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="ativo">Home</a></li>
+                    <li><a href="./src/pages/portifolio.html">Portfólio</a></li>
+                    <li><a href="./src/pages/sobre.html">Sobre</a></li>
+                    <li><a href="./src/pages/contato.html">Contato</a></li>
+                            <li>
+                                <a href="#" id="btn-abrir-carrinho" class="carrinho-icone">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                    <span id="carrinho-contador">0</span>
+                                </a>
+                            </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <img src="./src/assets/Horizon Games.png" alt="Logo Horizon Games" class="hero-logo">
+            
+            <h1>Bem-vindo à <span class="hero-destaque">Horizon Games</span></h1>
+            <p>O <span class="destaque-azul">Onde a diversão</span> nunca para. Serviços de <span class="destaque-azul">qualidade</span> com comprometimento e dedicação.</p>
+            <div class="hero-botoes">
+                <a href="./src/pages/contato.html" class="btn-hero-primary">Entre em Contato</a>
+                <a href="./src/pages/portifolio.html" class="btn-hero-secondary">Ver Nossos Serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div id="container">
+
+            <section class="features-section">
+                <h2 class="titulo-secao">Por que escolher a Horizon Games?</h2>
+                <div class="features-grid">
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-heart fa-2x" style="color: #7c3aed;"></i>
+                        </div>
+                        <h3>Loja número 1 dos gamers</h3>
+                        <p>Aqui o jogo nunca sai do lugar, com <span class="destaque-azul"> o nosso catálogo</span> robusto de jogos á equipamentos que vão te surpreender.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-award fa-2x" style="color: #7c3aed;"></i>
+                        </div>
+                        <h3>Profissionais Qualificados</h3>
+                        <p>Equipe <span class="destaque-amarelo">especializada e treinada</span> para oferecer o melhor atendimento.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-clock fa-2x" style="color: #7c3aed;"></i>
+                        </div>
+                        <h3>Horário Flexível</h3>
+                        <p>Aberto <span class="destaque-azul">de Segunda á Sábado</span> para te atender do conforto da sua casa.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fa-solid fa-star fa-2x" style="color: #7c3aed;"></i>
+                        </div>
+                        <h3>Serviços Premium</h3>
+                        <p><span class="destaque-azul">Jogos do momento</span> e muito mais.</p>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2>Preparado para encarar a diversão?</h2>
+                <p>Entre em contato conosco. Estamos ansiosos para conhecer você!</p>
+                <a href="./src/pages/contato.html" class="btn-cta">Fale Conosco</a>
+            </section>
+
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="src/js/script.js"></script>
 </body>
 </html>

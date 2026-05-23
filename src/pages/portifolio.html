@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizon Games | Portfólio</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/portifolio.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-wrapper">
+            <img src="../assets/LogoHorizonGames.png" alt="Logo Horizon Games" id="logo">
+            <span class="logo-texto">Horizon Games</span>
+        </div>
+        <div class="nav-direita">
+            <div id="menu-hamburguer"><span></span><span></span><span></span></div>
+            <nav>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="#" class="ativo">Portfólio</a></li>
+                    <li><a href="./sobre.html">Sobre</a></li>
+                    <li><a href="./contato.html">Contato</a></li>
+                    <li>
+                        <a href="#" id="btn-abrir-carrinho" class="carrinho-icone">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span id="carrinho-contador">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="container">
+
+            <!-- EQUIPAMENTOS GAMERS -->
+            <section>
+                <h2 class="titulo-secao">Equipamentos <span class="destaque-roxo">Gamers</span></h2>
+                <p class="subtitulo-secao">Hardware de alto desempenho para levar sua experiência ao próximo nível.</p>
+
+                <div class="produtos-grid">
+
+                    <div class="produto-card">
+                        <div class="produto-icon">
+                            <i class="fa-solid fa-keyboard"></i>
+                        </div>
+                        <h3>Teclado Mecânico</h3>
+                        <p>Switches personalizáveis, RGB full e resposta ultrarrápida para competições.</p>
+                        <span class="produto-preco">A partir de R$ 299</span>
+                        <button class="btn-add-carrinho" onclick="adicionarAoCarrinho('eq1', 'Teclado Mecânico Gamer', 299.00)">
+                            Adicionar <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <div class="produto-card">
+                        <div class="produto-icon">
+                            <i class="fa-solid fa-computer-mouse"></i>
+                        </div>
+                        <h3>Mouse Gamer</h3>
+                        <p>Alta precisão com DPI ajustável, design ergonômico e iluminação RGB.</p>
+                        <span class="produto-preco">A partir de R$ 199</span>
+                        <button class="btn-add-carrinho" onclick="adicionarAoCarrinho('eq2', 'Mouse Gamer', 199.00)">
+                            Adicionar <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <div class="produto-card">
+                        <div class="produto-icon">
+                            <i class="fa-solid fa-headset"></i>
+                        </div>
+                        <h3>Headset Gamer</h3>
+                        <p>Som surround 7.1, microfone com cancelamento de ruído e conforto para longas sessões.</p>
+                        <span class="produto-preco">A partir de R$ 349</span>
+                        <button class="btn-add-carrinho" onclick="adicionarAoCarrinho('eq3', 'Headset Gamer', 349.00)">
+                            Adicionar <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <div class="produto-card">
+                        <div class="produto-icon">
+                            <i class="fa-solid fa-desktop"></i>
+                        </div>
+                        <h3>Monitor Gamer</h3>
+                        <p>144Hz ou 240Hz, tempo de resposta 1ms e resolução Full HD ou 2K.</p>
+                        <span class="produto-preco">A partir de R$ 1.299</span>
+                        <button class="btn-add-carrinho" onclick="adicionarAoCarrinho('eq4', 'Monitor Gamer', 1299.00)">
+                            Adicionar <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <div class="produto-card">
+                        <div class="produto-icon">
+                            <i class="fa-solid fa-gamepad"></i>
+                        </div>
+                        <h3>Controle Pro</h3>
+                        <p>Compatível com PC e consoles, gatilhos adaptáveis e vibração haptica.</p>
+                        <span class="produto-preco">A partir de R$ 449</span>
+                        <button class="btn-add-carrinho" onclick="adicionarAoCarrinho('eq5', 'Controle Pro', 449.00)">
+                            Adicionar <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <div class="produto-card">
+                        <div class="produto-icon">
+                            <i class="fa-solid fa-chair"></i>
+                        </div>
+                        <h3>Cadeira Gamer</h3>
+                        <p>Ergonomia premium, apoio lombar ajustável e suporte para longas jogatinas.</p>
+                        <span class="produto-preco">A partir de R$ 899</span>
+                        <button class="btn-add-carrinho" onclick="adicionarAoCarrinho('eq6', 'Cadeira Gamer', 899.00)">
+                            Adicionar <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- JOGOS DO MOMENTO -->
+            <section class="jogos-section">
+                <h2 class="titulo-secao">Jogos do <span class="destaque-amarelo">Momento</span></h2>
+                <p class="subtitulo-secao">Os títulos mais quentes do mercado — físicos e digitais disponíveis na Horizon Games.</p>
+
+                <div class="jogos-grid">
+
+                    <div class="jogo-card">
+                        <div class="jogo-badge">Lançamento</div>
+                        <div class="jogo-icon">
+                            <i class="fa-solid fa-dragon"></i>
+                        </div>
+                        <h3>Elden Ring: Nightreign</h3>
+                        <p>A expansão mais aguardada de 2025. Explore novos mundos e enfrente chefes épicos.</p>
+                        <span class="jogo-plataforma"><i class="fa-brands fa-playstation"></i> <i class="fa-brands fa-xbox"></i> <i class="fa-brands fa-steam"></i></span>
+                        <span class="produto-preco">R$ 299</span>
+                        <button class="btn-add-carrinho" onclick="adicionarAoCarrinho('jg1', 'Elden Ring: Nightreign', 299.00)">
+                            Adicionar <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <div class="jogo-card jogo-destaque">
+                        <div class="jogo-badge badge-hot">+ Vendido</div>
+                        <div class="jogo-icon">
+                            <i class="fa-solid fa-gun"></i>
+                        </div>
+                        <h3>Call of Duty: Black Ops 7</h3>
+                        <p>Campanha cinematográfica e multiplayer frenético que domina o cenário competitivo.</p>
+                        <span class="jogo-plataforma"><i class="fa-brands fa-playstation"></i> <i class="fa-brands fa-xbox"></i> <i class="fa-brands fa-steam"></i></span>
+                        <span class="produto-preco">R$ 349</span>
+                        <button class="btn-add-carrinho" onclick="adicionarAoCarrinho('jg2', 'Call of Duty: Black Ops 7', 349.00)">
+                            Adicionar <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <div class="jogo-card">
+                        <div class="jogo-badge">Trending</div>
+                        <div class="jogo-icon">
+                            <i class="fa-solid fa-car-side"></i>
+                        </div>
+                        <h3>GTA VI</h3>
+                        <p>O título mais esperado dos últimos anos. Mundo aberto, gráficos próximos do real.</p>
+                        <span class="jogo-plataforma"><i class="fa-brands fa-playstation"></i> <i class="fa-brands fa-xbox"></i></span>
+                        <span class="produto-preco">R$ 399</span>
+                        <button class="btn-add-carrinho" onclick="adicionarAoCarrinho('jg3', 'GTA VI', 399.00)">
+                            Adicionar <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                    <div class="jogo-card">
+                        <div class="jogo-badge">Indie</div>
+                        <div class="jogo-icon">
+                            <i class="fa-solid fa-ghost"></i>
+                        </div>
+                        <h3>Hollow Knight: Silksong</h3>
+                        <p>A sequência do aclamado metroidvania com novo mundo, novas mecânicas e trilha incrível.</p>
+                        <span class="jogo-plataforma"><i class="fa-brands fa-steam"></i> <i class="fa-brands fa-xbox"></i></span>
+                        <span class="produto-preco">R$ 89</span>
+                        <button class="btn-add-carrinho" onclick="adicionarAoCarrinho('jg4', 'Hollow Knight: Silksong', 89.00)">
+                            Adicionar <i class="fa-solid fa-plus"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- ASSINATURAS -->
+            <section class="precos-section">
+                <h2 class="titulo-secao">Planos de <span class="destaque-roxo">Assinatura</span></h2>
+                <p class="subtitulo-secao">Acesso ilimitado a jogos, descontos exclusivos e benefícios para jogadores de todos os níveis.</p>
+
+                <div class="precos-grid">
+
+                    <div class="plano-card">
+                        <div class="plano-header">
+                            <div class="plano-icone"><i class="fa-solid fa-gamepad"></i></div>
+                            <h3>Player</h3>
+                            <p>Ideal para quem está começando</p>
+                        </div>
+                        <div class="plano-preco">
+                            <span class="preco-label">R$</span>
+                            <span class="preco-valor">29</span>
+                            <span class="preco-periodo">/mês</span>
+                        </div>
+                        <ul class="plano-lista">
+                            <li><i class="fa-solid fa-check"></i> Acesso a 50+ jogos</li>
+                            <li><i class="fa-solid fa-check"></i> 5% de desconto em produtos</li>
+                            <li><i class="fa-solid fa-check"></i> Suporte por email</li>
+                            <li class="desabilitado"><i class="fa-solid fa-xmark"></i> Acesso antecipado</li>
+                            <li class="desabilitado"><i class="fa-solid fa-xmark"></i> Eventos exclusivos</li>
+                        </ul>
+                        <button class="btn-add-carrinho" onclick="adicionarAoCarrinho('ass1', 'Assinatura Player (mensal)', 29.00)">
+                            Assinar Agora <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="plano-card plano-destaque">
+                        <div class="plano-popular">Mais Popular</div>
+                        <div class="plano-header">
+                            <div class="plano-icone"><i class="fa-solid fa-star"></i></div>
+                            <h3>Pro Gamer</h3>
+                            <p>Para quem leva o jogo a sério</p>
+                        </div>
+                        <div class="plano-preco">
+                            <span class="preco-label">R$</span>
+                            <span class="preco-valor">59</span>
+                            <span class="preco-periodo">/mês</span>
+                        </div>
+                        <ul class="plano-lista">
+                            <li><i class="fa-solid fa-check"></i> Acesso a 200+ jogos</li>
+                            <li><i class="fa-solid fa-check"></i> 15% de desconto em produtos</li>
+                            <li><i class="fa-solid fa-check"></i> Suporte prioritário 24/7</li>
+                            <li><i class="fa-solid fa-check"></i> Acesso antecipado a lançamentos</li>
+                            <li class="desabilitado"><i class="fa-solid fa-xmark"></i> Eventos exclusivos</li>
+                        </ul>
+                        <button class="btn-add-carrinho" onclick="adicionarAoCarrinho('ass2', 'Assinatura Pro Gamer (mensal)', 59.00)">
+                            Assinar Agora <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="plano-card">
+                        <div class="plano-header">
+                            <div class="plano-icone"><i class="fa-solid fa-trophy"></i></div>
+                            <h3>Elite</h3>
+                            <p>Experiência máxima sem limites</p>
+                        </div>
+                        <div class="plano-preco">
+                            <span class="preco-label">R$</span>
+                            <span class="preco-valor">99</span>
+                            <span class="preco-periodo">/mês</span>
+                        </div>
+                        <ul class="plano-lista">
+                            <li><i class="fa-solid fa-check"></i> Acesso ilimitado a todos os jogos</li>
+                            <li><i class="fa-solid fa-check"></i> 25% de desconto em produtos</li>
+                            <li><i class="fa-solid fa-check"></i> Suporte VIP dedicado</li>
+                            <li><i class="fa-solid fa-check"></i> Acesso antecipado a lançamentos</li>
+                            <li><i class="fa-solid fa-check"></i> Eventos e torneios exclusivos</li>
+                        </ul>
+                        <button class="btn-add-carrinho" onclick="adicionarAoCarrinho('ass3', 'Assinatura Elite (mensal)', 99.00)">
+                            Assinar Agora <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer></footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

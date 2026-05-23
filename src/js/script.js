@@ -1,29 +1,3 @@
-/* ===== HERO ANIMATION ===== */
-function animarHero() {
-    const hero = document.querySelector('#hero, #hero-contato, #hero-portifolio, #hero-sobre');
-    if (!hero) return;
-
-    const els = hero.querySelectorAll('h1, p, .hero-logo, .hero-botoes');
-    els.forEach((el, i) => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(36px)';
-        el.style.animation = 'none';
-        el.style.transition = `opacity 0.75s ease ${i * 0.18}s, transform 0.75s ease ${i * 0.18}s`;
-    });
-
-    requestAnimationFrame(() => {
-        requestAnimationFrame(() => {
-            els.forEach(el => {
-                el.style.opacity = '1';
-                el.style.transform = 'translateY(0)';
-            });
-        });
-    });
-}
-
-document.addEventListener('DOMContentLoaded', animarHero);
-window.addEventListener('pageshow', (e) => { if (e.persisted) animarHero(); });
-
 window.addEventListener('load', () => {
     const splash = document.getElementById('splashScreen');
     if (splash) {
@@ -33,19 +7,25 @@ window.addEventListener('load', () => {
     }
 });
 
-const menuToggle = document.getElementById('menuToggle');
-const navMenu = document.getElementById('navMenu');
+// Pega o botão hamburguer e o menu de navegação
+var menuToggle = document.getElementById('menuToggle');
+var navMenu = document.getElementById('navMenu');
 
 if (menuToggle && navMenu) {
-    menuToggle.addEventListener('click', () => {
+
+    // Clicou no hamburguer: abre ou fecha o menu
+    menuToggle.addEventListener('click', function() {
         navMenu.classList.toggle('active');
     });
 
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
+    // Clicou em qualquer link do menu: fecha o menu
+    var linksMenu = document.querySelectorAll('.nav-link');
+    linksMenu.forEach(function(link) {
+        link.addEventListener('click', function() {
             navMenu.classList.remove('active');
         });
     });
+
 }
 
 const contactForm = document.getElementById('contactForm');

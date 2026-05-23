@@ -1,5 +1,35 @@
 /* ===== PORTFÓLIO — HORIZON GAMES ===== */
 
+/* Hero */
+#hero-portifolio {
+    background: linear-gradient(135deg, #0D1117 0%, #0a1628 50%, #0D1117 100%);
+    border-bottom: 1px solid rgba(124, 58, 237, 0.2);
+    padding: 80px 2rem;
+    text-align: center;
+}
+
+#hero-portifolio h1 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #f1f5f9;
+    margin-bottom: 1rem;
+    animation: heroSlideUp 0.9s ease-out;
+}
+
+#hero-portifolio p {
+    font-size: 1.15rem;
+    color: #94a3b8;
+    opacity: 0.9;
+    animation: heroSlideUp 0.9s ease-out 0.15s both;
+}
+
+@keyframes heroSlideUp {
+    from { transform: translateY(40px); opacity: 0; }
+    to   { transform: translateY(0);    opacity: 1; }
+}
+
+
+
 /* Títulos e destaques */
 .destaque-roxo  { color: #7c3aed; }
 .destaque-amarelo { color: #f59e0b; }

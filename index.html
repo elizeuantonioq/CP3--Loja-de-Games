@@ -7,6 +7,8 @@
     
     <link rel="stylesheet" href="./src/css/base.css">
     <link rel="stylesheet" href="./src/css/home.css">
+    <link rel="stylesheet" href="./src/css/carrinho.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -90,6 +92,63 @@
                 </div>
             </section>
 
+            <section class="promo-section">
+                <h2 class="titulo-secao">Promoções em Destaque</h2>
+                <p class="promo-subtitulo">Ofertas por tempo limitado. Não perca!</p>
+
+                <div class="promo-grid">
+
+                    <div class="promo-card">
+                        <span class="promo-badge">-40%</span>
+                        <div class="promo-img">
+                            <i class="fa-solid fa-gamepad fa-3x"></i>
+                        </div>
+                        <h3>Controle Pro Gamer</h3>
+                        <p>Controle sem fio com vibração HD e bateria de longa duração.</p>
+                        <div class="promo-precos">
+                            <span class="preco-antigo">R$ 349,90</span>
+                            <span class="preco-atual">R$ 209,90</span>
+                        </div>
+                        <button class="btn-promo btn-add-carrinho" onclick="adicionarAoCarrinho('controle-pro', 'Controle Pro Gamer', 209.90, this)">
+                            <i class="fa-solid fa-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+
+                    <div class="promo-card promo-destaque">
+                        <span class="promo-badge">-55%</span>
+                        <div class="promo-img">
+                            <i class="fa-solid fa-headset fa-3x"></i>
+                        </div>
+                        <h3>Headset 7.1 Surround</h3>
+                        <p>Som imersivo com microfone com cancelamento de ruído.</p>
+                        <div class="promo-precos">
+                            <span class="preco-antigo">R$ 599,90</span>
+                            <span class="preco-atual">R$ 269,90</span>
+                        </div>
+                        <button class="btn-promo btn-add-carrinho" onclick="adicionarAoCarrinho('headset-71', 'Headset 7.1 Surround', 269.90, this)">
+                            <i class="fa-solid fa-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+
+                    <div class="promo-card">
+                        <span class="promo-badge">-30%</span>
+                        <div class="promo-img">
+                            <i class="fa-solid fa-computer-mouse fa-3x"></i>
+                        </div>
+                        <h3>Mouse Gamer RGB</h3>
+                        <p>16.000 DPI, 7 botões programáveis e iluminação RGB.</p>
+                        <div class="promo-precos">
+                            <span class="preco-antigo">R$ 279,90</span>
+                            <span class="preco-atual">R$ 195,90</span>
+                        </div>
+                        <button class="btn-promo btn-add-carrinho" onclick="adicionarAoCarrinho('mouse-rgb', 'Mouse Gamer RGB', 195.90, this)">
+                            <i class="fa-solid fa-cart-plus"></i> Adicionar
+                        </button>
+                    </div>
+
+                </div>
+            </section>
+
             <section class="cta-section">
                 <h2>Preparado para encarar a diversão?</h2>
                 <p>Entre em contato conosco. Estamos ansiosos para conhecer você!</p>
@@ -100,6 +159,26 @@
     </main>
 
     <footer></footer>
+
+    <!-- Overlay escuro ao fundo do carrinho -->
+    <div id="carr-overlay"></div>
+
+    <!-- Painel lateral do carrinho -->
+    <aside id="carr-painel">
+        <div class="carr-cabecalho">
+            <h2><i class="fa-solid fa-cart-shopping"></i> Carrinho</h2>
+            <button id="carr-fechar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="carr-itens"></div>
+        <div id="carr-footer">
+            <div class="carr-total-linha">
+                <span>Total</span>
+                <span id="carr-total"></span>
+            </div>
+            <button class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+            <button class="btn-limpar" onclick="limparCarrinho()">Limpar carrinho</button>
+        </div>
+    </aside>
 
     <script src="src/js/script.js"></script>
 </body>

@@ -1,0 +1,116 @@
+footer {
+    background: #060a10;
+    border-top: 1px solid rgba(0, 212, 255, 0.15);
+    padding: 3rem 2rem 1.5rem;
+    margin-top: 2rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.footer-bloco {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.footer-logo {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    border-radius: 50%;
+    border: 2px solid var(--cyan-main);
+}
+
+.footer-nome {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--cyan-main);
+}
+
+.footer-desc {
+    font-size: 0.85rem;
+    color: #475569;
+    max-width: 200px;
+}
+
+.footer-bloco h4 {
+    font-size: 0.95rem;
+    color: var(--white);
+    margin-bottom: 0.25rem;
+}
+
+.footer-lista {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.footer-lista li {
+    font-size: 0.9rem;
+    color: #64748b;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.footer-lista li i {
+    color: var(--cyan-main);
+    width: 16px;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.footer-redes a {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    border: 1px solid #334155;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #64748b;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.3s, border-color 0.3s;
+}
+
+.footer-redes a:hover {
+    color: var(--cyan-main);
+    border-color: var(--cyan-main);
+}
+
+.footer-copy {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    text-align: center;
+}
+
+.footer-copy p {
+    font-size: 0.85rem;
+    color: #334155;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bloco { align-items: center; }
+    .footer-lista li { justify-content: center; }
+    .footer-desc { text-align: center; }
+}

@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Horizon Games | Portfólio</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/portifolio.css">
+    <link rel="stylesheet" href="../css/carrinho.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 
 <body>
@@ -277,7 +278,55 @@
         </div>
     </main>
 
-    <footer></footer>
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-bloco">
+                <img src="../assets/Horizon Games.png" alt="Logo" class="footer-logo">
+                <span class="footer-nome">Horizon Games</span>
+                <p class="footer-desc">O lugar onde a diversão nunca para.</p>
+            </div>
+
+            <div class="footer-bloco">
+                <h4>Contato</h4>
+                <ul class="footer-lista">
+                    <li><i class="fa-solid fa-phone"></i> (11) 99999-9999</li>
+                    <li><i class="fa-solid fa-envelope"></i> contato@horizongames.com</li>
+                </ul>
+            </div>
+
+            <div class="footer-bloco">
+                <h4>Redes Sociais</h4>
+                <div class="footer-redes">
+                    <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" title="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-copy">
+            <p>&copy; 2026 Horizon Games. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <div id="carr-overlay"></div>
+    <aside id="carr-painel">
+        <div class="carr-cabecalho">
+            <h2><i class="fa-solid fa-cart-shopping"></i> Carrinho</h2>
+            <button id="carr-fechar"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div id="carr-itens"></div>
+        <div id="carr-footer">
+            <div class="carr-total-linha">
+                <span>Total</span>
+                <span id="carr-total"></span>
+            </div>
+            <button class="btn-finalizar" onclick="finalizarCompra()">Finalizar Compra</button>
+            <button class="btn-limpar" onclick="limparCarrinho()">Limpar carrinho</button>
+        </div>
+    </aside>
 
     <script src="../js/script.js"></script>
 </body>
